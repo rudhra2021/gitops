@@ -23,6 +23,13 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<properties>
+  		<sonar.projectKey>sonar-scanner-action-sasi</sonar.projectKey>
+	  	<sonar.organization>rudhra2021</sonar.organization>
+	  	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	  	<sonar.login>98bf50508c81e08b0d7507bcb37ea8231a42d1e1</sonar.login>
+	</properties>
 
 	
 	<scm>
