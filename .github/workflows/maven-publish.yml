@@ -33,7 +33,7 @@ jobs:
         # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: sonar-scanner
-           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+           -Dsonar.login=rudhra2021@github
            -Dsonar.organization=rudhra2021
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=sonar-scanner-action
