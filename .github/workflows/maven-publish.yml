@@ -36,4 +36,4 @@ jobs:
            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
            -Dsonar.organization=rudhra2021
            -Dsonar.host.url=https://sonarcloud.io/
-           -Dsonar.projectKey=sonar-scanner-action-sasi
+           -Dsonar.projectKey=rudhra2021_gitops
