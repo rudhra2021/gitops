@@ -25,7 +25,9 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml    
-    
+    - name: Runsonarinde  
+      run: org.sonarsource.scanner.maven:sonar
+      
     - name: Setup sonarqube
       uses: warchant/setup-sonar-scanner@v1
     - name: Run sonarqube
@@ -37,3 +39,4 @@ jobs:
            -Dsonar.organization=rudhra2021
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=rudhra2021_gitops
+            -Dsonar.java.binaries=.build\libs\
