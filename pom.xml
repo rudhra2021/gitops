@@ -26,6 +26,7 @@
 	  	<sonar.organization>rudhra2021</sonar.organization>
 	  	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	  	<sonar.login>98bf50508c81e08b0d7507bcb37ea8231a42d1e1</sonar.login>
+		<sonar.sources>src/main/java</sonar.sources>
 	</properties>
 	
 
