@@ -31,3 +31,10 @@ jobs:
       with:
         # Sonar-scanner version
         version: 4.2.0.1873
+
+
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.3
+      with:
+        # Set the sonar.projectBaseDir analysis property
+        projectBaseDir: . # optional, default is .
