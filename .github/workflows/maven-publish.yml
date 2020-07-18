@@ -25,7 +25,8 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml    
-      
+           mvn -B sonar:sonar
+            
     - name: Setup sonarqube
       uses: warchant/setup-sonar-scanner@v1
     - name: Run sonarqube
