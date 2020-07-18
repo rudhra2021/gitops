@@ -40,6 +40,9 @@ jobs:
 #           -Dsonar.java.binaries=./build/libs/
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.3
+      env:
+        # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         # Set the sonar.projectBaseDir analysis property
         projectBaseDir: . # optional, default is .
