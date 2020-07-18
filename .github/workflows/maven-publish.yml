@@ -25,7 +25,17 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml    
-           mvn -B sonar:sonar
+   
+    - name: Analyse with Sonar
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: mvn -B sonar:sonar  
+          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+          -Dsonar.organization=rudhra2021
+          -Dsonar.host.url=https://sonarcloud.io/
+          -Dsonar.projectKey=rudhra2021_gitops
+   
             
     - name: Setup sonarqube
       uses: warchant/setup-sonar-scanner@v1
