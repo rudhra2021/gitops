@@ -38,3 +38,8 @@ jobs:
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=rudhra2021_gitops
 #           -Dsonar.java.binaries=./build/libs/
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v1.3
+      with:
+        # Set the sonar.projectBaseDir analysis property
+        projectBaseDir: . # optional, default is .
