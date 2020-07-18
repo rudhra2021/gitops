@@ -37,4 +37,4 @@ jobs:
            -Dsonar.organization=rudhra2021
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=rudhra2021_gitops
-           -Dsonar.java.binaries=.build/libs/
+           -Dsonar.java.binaries=./build/libs/
